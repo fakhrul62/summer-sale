@@ -18,10 +18,12 @@
         <div class="container w-10/12 mx-auto grid grid-cols-2">
             <div class="flex flex-col items-center justify-center w-10/12 mx-auto text-center gap-5">
                 <h3 class="text-xl font-medium text-black">---SALE FEVER---</h3>
-                <h2 class="text-5xl font-bold text-black">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h2>
+                <h2 class="text-5xl font-bold text-black">Purchase TK 200 or above & get <span
+                        class="text-[#E527B2]">20% off</span></h2>
                 <div class="flex items-center gap-5">
-                    <h4 class="text-black font-semibold">Use Promo Code <i class="fa-sharp fa-thin fa-arrow-right-long"></i></h4>
-                    <button class="btn btn-secondary px-5 min-h-0 h-9 text-white">SELL200</button>
+                    <h4 class="text-black font-semibold">Use Promo Code <i
+                            class="fa-sharp fa-thin fa-arrow-right-long"></i></h4>
+                    <button class="btn btn-secondary px-5 min-h-0 h-9 text-white" id="use-coupon">SELL200</button>
                 </div>
             </div>
             <div>
@@ -30,25 +32,216 @@
         </div>
     </section>
     <!-- main -->
-    <section class="py-9 bg-[#f8f8f8]">
+    <section class="py-14 bg-[#f8f8f8]">
         <div class="container w-10/12 mx-auto">
             <div class="grid grid-cols-[74%_24%] gap-5">
                 <div>
-                    <h2>Kitchenware</h2>
-                    <div class="grid grid-cols-3">
-                        <div class="card bg-base-100 shadow-xl p-5">
-                            <figure class="">
-                              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                              <h2 class="card-title">Shoes!</h2>
-                              <p>If a dog chews shoes whose shoes does he choose?</p>
-                              <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
-                              </div>
+                    <div>
+                        <h2 class="py-8 font-bold text-3xl text-black">Kitchenware</h2>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">K. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">69.00TK</button>
+                                    
+                                </div>
                             </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">H. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)"><span id="prod2">49.00TK</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">A. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">59.00TK</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="py-8 font-bold text-3xl text-black">Kitchenware</h2>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">V. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">29.00TK</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">C. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">39.00TK</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">P. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">79.00TK</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="py-8 font-bold text-3xl text-black">Kitchenware</h2>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">Y. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">89.00TK</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">E. Accessories</h2>
+                                    
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">99.00TK</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 shadow-xl hover:shadow-md transition-shadow p-5">
+                                <figure class="bg-[#f3f3f3] py-5 rounded-xl">
+                                    <img src="images/prod1.png" alt="Shoes" class="" />
+                                </figure>
+                                <div class="rating rating-sm justify-center mt-5">
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="card-body items-center text-center p-2">
+                                    <h2 class="card-title font-bold text-black">N. Accessories</h2>
+                                        <button class="btn btn-ghost text-gray-600" onclick="eventClick(this)">109.00TK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mt-[6.3rem]">
+                    <div class="bg-white p-4  rounded-xl shadow-xl">
+                        <h3 class="text-lg text-black font-semibold">Have coupon?</h3>
+                        <div class="join mt-5">
+                                <input class="input w-[70%] input-bordered join-item" type="text" id="coupon" placeholder="Coupon Code"/>
+                                <button class="btn btn-secondary w-[30%] join-item" id="coupon-btn">Apply</button>
                           </div>
                     </div>
+                    <div class="bg-white p-5  rounded-xl shadow-xl mt-5">
+                        <div class="flex flex-col gap-3 list-decimal font-bold max-h-56 overflow-x-hidden hover:overflow-x-hidden hover:overflow-scroll" id="add-cart">
+                            
+                        </div>
+                        <div class="divider before:h-[1px] after:h-[1px]"></div> 
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-md text-black font-medium">Total Price: <span class="font-bold" id="total-value">0</span></h3>
+                            <h3 class="text-md text-black font-medium">Discount: <span class="font-bold" id="discount">0</span></h3>
+                            <h3 class="text-md text-black font-medium">After Discount Total: <span class="font-bold" id="final-value">0</span></h3>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -62,8 +255,9 @@
 
 
     <!-- scripts -->
-<script src="https://fakhrul62.github.io/icons/js/fontawesome.js"></script>
-<script src="https://fakhrul62.github.io/icons/js/sharp-thin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://fakhrul62.github.io/icons/js/fontawesome.js"></script>
+    <script src="https://fakhrul62.github.io/icons/js/sharp-thin.js"></script>
 </body>
 
 </html>
