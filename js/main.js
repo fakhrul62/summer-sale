@@ -12,7 +12,19 @@ function eventClick(target){
     total = parseFloat(total) + price;
     document.getElementById('total-value').innerText = total + " TK";
     document.getElementById('final-value').innerText = total + " TK";
+
+
+    const costing = parseFloat(document.getElementById('final-value').innerText);
+
+    if (costing > 0) {
+        document.getElementById("buy").removeAttribute('disabled');
+    }
+    else{
+        document.getElementById("buy").setAttribute('disabled');
+    }
 }
+
+
 
 
 document.getElementById("coupon-btn").addEventListener('click', function(){
@@ -37,3 +49,6 @@ document.getElementById("coupon-btn").addEventListener('click', function(){
 document.getElementById("use-coupon").addEventListener('click', function(){
     document.getElementById('coupon').value = "SELL200"; 
 })
+
+
+    
