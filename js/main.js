@@ -32,11 +32,13 @@ document.getElementById("coupon-btn").addEventListener('click', function(){
     const prevFinalValue = parseFloat(document.getElementById('final-value').innerText);
 
     const prevDis = parseFloat(document.getElementById('discount').innerText);
+    const off = ((100 - 20) * prevFinalValue) / 100;
+    const disOff = prevFinalValue - off;
 
     if(prevFinalValue>200){
         if(couponInput == "SELL200"){
-            document.getElementById('final-value').innerText = prevFinalValue - 200 + " TK";
-            document.getElementById('discount').innerText = prevDis + 200 + " TK";
+            document.getElementById('final-value').innerText = prevFinalValue - disOff + " TK";
+            document.getElementById('discount').innerText = prevDis + disOff + " TK";
         }
         else{
             document.getElementById('final-value').innerText = prevFinalValue + " TK";
