@@ -50,5 +50,7 @@ document.getElementById("use-coupon").addEventListener('click', function(){
     document.getElementById('coupon').value = "SELL200"; 
 })
 
-
+function home(){
+    window.location = "index.html";
+}
     
