@@ -10,8 +10,9 @@ function eventClick(target){
 
     const price = parseFloat(target.parentNode.childNodes[3].innerText);
     total = parseFloat(total) + price;
-    document.getElementById('total-value').innerText = total + " TK";
-    document.getElementById('final-value').innerText = total + " TK";
+    document.getElementById('total-value').innerText = total.toFixed(2) + " TK";
+    document.getElementById('final-value').innerText = total.toFixed(2) + " TK";
+    document.getElementById('discount').innerText = "0 TK";
 
 
     const costing = parseFloat(document.getElementById('final-value').innerText);
@@ -23,29 +24,23 @@ function eventClick(target){
         document.getElementById("buy").setAttribute('disabled');
     }
 }
-
-
-
-
 document.getElementById("coupon-btn").addEventListener('click', function(){
     const couponInput = document.getElementById('coupon').value;
     const prevFinalValue = parseFloat(document.getElementById('final-value').innerText);
-
     const prevDis = parseFloat(document.getElementById('discount').innerText);
     const off = ((100 - 20) * prevFinalValue) / 100;
     const disOff = prevFinalValue - off;
 
     if(prevFinalValue>200){
         if(couponInput == "SELL200"){
-            document.getElementById('final-value').innerText = prevFinalValue - disOff + " TK";
-            document.getElementById('discount').innerText = prevDis + disOff + " TK";
+            document.getElementById('final-value').innerText = (prevFinalValue - disOff).toFixed(2) + " TK";
+            document.getElementById('discount').innerText = disOff.toFixed(2) + " TK";
         }
         else{
-            document.getElementById('final-value').innerText = prevFinalValue + " TK";
+            document.getElementById('final-value').innerText = prevFinalValue.toFixed(2) + " TK";
         }
     }
     document.getElementById('coupon').value = '';
-
 })
 
 document.getElementById("use-coupon").addEventListener('click', function(){
@@ -55,4 +50,5 @@ document.getElementById("use-coupon").addEventListener('click', function(){
 function home(){
     window.location = "index.html";
 }
-    
+
+// console.log(new Date('1998-11-18'));
